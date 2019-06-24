@@ -1,0 +1,12 @@
+i=input()
+m=len(i.lower())
+count=0
+for n in range(0,len(i)):
+    for y in range((n+1),len(i)):
+        if(i[n]==i[y]):
+            count=count+1
+if(count==0):
+    print(m)
+else:
+    m=m-count
+    print(m)
